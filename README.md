@@ -51,3 +51,23 @@ This project is a tracking system that captures user access information, includi
 
 ## Database
    - ![Database schema](schema.png "Database Schema")
+
+## Setup
+
+   - On your .env set your database config
+
+   ```
+      DB_CONNECTION=mysql
+      DB_HOST=127.0.0.1
+      DB_PORT=3306
+      DB_DATABASE=records
+      DB_USERNAME=root
+      DB_PASSWORD=rootpassword
+   ```
+
+   - Execute
+   ```
+      composer install
+      php artisan migrate
+      php artisan serve
+   ```
